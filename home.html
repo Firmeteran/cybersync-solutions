@@ -1,42 +1,111 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
-<html lang="id" data-bs-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CyberSync Solutions</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-
     <style>
-        body { font-family: 'Poppins', sans-serif; }
-        .hero-section { padding: 100px 0; background: linear-gradient(45deg, #0d6efd, #0dcaf0); color: white; }
-        .section-padding { padding: 80px 0; }
-        .portfolio-img { height: 250px; object-fit: cover; border-radius: 10px; }
+        .hero-section {
+            padding: 120px 0;
+            background: linear-gradient(45deg, #0d6efd, #0dcaf0);
+            color: white;
+        }
     </style>
 </head>
-<body>
+
+<body class="d-flex flex-column min-vh-100">
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#">CyberSync Solutions</a>
+            <a class="navbar-brand fw-bold" href="home.html">CYBERSYNC</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    </li>
+                    <li class="nav-item"><a class="nav-link active" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
                 </ul>
-                <div class="form-check form-switch ms-3">
-                    <input class="form-check-input" type="checkbox" id="darkModeToggle">
-                    <label class="form-check-label text-light" for="darkModeToggle"><i class="bi bi-moon-stars"></i></label>
-                </div>
             </div>
         </div>
     </nav>
+
+    <main class="flex-grow-1">
+        <header class="hero-section text-center">
+            <div class="container">
+                <h1 class="display-3 fw-bold">CyberSync Solutions</h1>
+                <p class="lead">Solusi Digital Terintegrasi untuk Masa Depan Bisnis Anda.</p>
+                <a href="services.html" class="btn btn-light btn-lg mt-3">Eksplorasi Layanan</a>
+            </div>
+        </header>
+
+        <section class="py-5 border-bottom bg-light">
+            <div class="container text-center">
+                <p class="text-muted small text-uppercase fw-bold mb-4">Dipercaya oleh berbagai perusahaan inovatif</p>
+                <div class="row row-cols-2 row-cols-md-4 g-4 opacity-50">
+                    <div class="col">
+                        <h4 class="fw-bold">TECHCORP</h4>
+                    </div>
+                    <div class="col">
+                        <h4 class="fw-bold">NEXUS.ID</h4>
+                    </div>
+                    <div class="col">
+                        <h4 class="fw-bold">GLOBO-APP</h4>
+                    </div>
+                    <div class="col">
+                        <h4 class="fw-bold">STARTUP-X</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold">Mengapa Memilih Kami?</h2>
+                    <p class="text-muted">Kami memberikan hasil terbaik dengan standar industri global.</p>
+                </div>
+                <div class="row g-4 text-center">
+                    <div class="col-md-4">
+                        <div class="p-4">
+                            <i class="bi bi-shield-check text-primary display-4 mb-3"></i>
+                            <h5 class="fw-bold">Terpercaya & Aman</h5>
+                            <p class="text-muted">Keamanan data klien adalah prioritas utama kami dalam setiap
+                                pengembangan produk.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="p-4">
+                            <i class="bi bi-lightning-charge text-primary display-4 mb-3"></i>
+                            <h5 class="fw-bold">Pengerjaan Cepat</h5>
+                            <p class="text-muted">Metodologi agile kami memastikan proyek selesai tepat waktu tanpa
+                                mengurangi kualitas.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="p-4">
+                            <i class="bi bi-headset text-primary display-4 mb-3"></i>
+                            <h5 class="fw-bold">Dukungan 24/7</h5>
+                            <p class="text-muted">Tim kami siap membantu Anda kapan saja untuk memastikan operasional
+                                bisnis berjalan lancar.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="py-4 bg-dark text-white text-center">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 CyberSync Solutions</p>
+        </div>
+    </footer>
+</body>
+
+</html>

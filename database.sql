@@ -15,19 +15,36 @@ CREATE TABLE IF NOT EXISTS users (
 
 
 -- DML
--- Simulasi input data untuk admin dan client (user)
+-- Simulasi input data untuk admin dan client (user) - Create
 INSERT INTO users (username, email, password, role) VALUES
 ('budi_admin', 'budi@cybersync.com', '$2y$10$eImiUi..examplehash1', 'admin'),
 ('siti_designer', 'siti@cybersync.com', '$2y$10$eImiUi..examplehash2', 'admin'),
 ('first_client', 'klien@company.com', '$2y$10$eImiUi..examplehash3', 'client');
 
+-- Read
+-- Menampilkan semua daftar pengguna yang terdaftar
+SELECT id, username, email, role, created_at 
+FROM users 
+ORDER BY created_at DESC;
 
--- Query Login/Register
--- Login, dengan mencari data user untuk melakukan verifikasi
-SELECT id, username, password, role
-FROM users
-WHERE klien@company.com
+-- Mencari data user berdasarkan email untuk verifikasi login
+SELECT id, username, password, role 
+FROM users 
+WHERE email = 'klien@company.com';
 
--- Register, dengan menginput data dari form register
-INSERT INTO users (username, email, password, role) VALUES
-('new_client', 'new@mail.com', 'hash_password_here', 'role_here')
+-- Update
+-- Mengubah username dan email berdasarkan ID pengguna
+UPDATE users 
+SET username = 'client_updated', 
+    email = 'updated_klien@company.com' 
+WHERE id = 3;
+
+-- Mengubah password (menggunakan hash password baru)
+UPDATE users 
+SET password = '$2y$10$new_secure_hash_here' 
+WHERE id = 3;
+
+-- Delete
+-- Menghapus akun pengguna secara permanen
+DELETE FROM users 
+WHERE id = 3;

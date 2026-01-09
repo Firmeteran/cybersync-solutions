@@ -24,7 +24,7 @@ function calculate() {
         }
     });
 
-    // Format angka ke Rupiah
+    // Mengubah format angka ke nominal Rupiah
     displayPrice.innerText = new Intl.NumberFormat('id-ID', {
         style: 'currency',
         currency: 'IDR',
@@ -32,7 +32,7 @@ function calculate() {
     }).format(total);
 }
 
-// Jalankan fungsi setiap kali ada perubahan input
+// Menjalankan fungsi setiap kali adanya perubahan input
 if (serviceSelect) {
     serviceSelect.addEventListener('change', calculate);
 }

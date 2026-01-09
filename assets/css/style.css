@@ -119,3 +119,108 @@
     color: #0d6efd;
     font-weight: bold;
 }
+
+
+/* Responsive */
+/* Home/landing page */
+@media (max-width: 576px) {
+    .display-3 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section {
+        padding: 80px 0;
+    }
+}
+
+/* Services */
+.service-card {
+    transition: all 0.3s ease-in-out;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    border: 1px solid #0d6efd !important;
+}
+
+.service-icon i {
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover .service-icon i {
+    transform: scale(1.1);
+}
+
+/* Portfolio */
+/* Mengadaptasikan semua gambar portfolio memiliki ukuran yang seragam */
+.portfolio-img-container {
+    height: 250px;
+    overflow: hidden;
+}
+
+.portfolio-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-card:hover img {
+    transform: scale(1.05);
+}
+
+/* About Us */
+/* Mengadaptasikan foto tim agar ukuran seragam */
+.team-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 5px solid #f8f9fa;
+    transition: transform 0.3s ease;
+}
+
+.team-card:hover img {
+    transform: scale(1.05);
+    border-color: #0d6efd;
+}
+
+/* Penyesuaian gambar About Us agar tidak terlalu mepet pada mobile */
+@media (max-width: 991px) {
+    .about-img {
+        margin-top: 2rem;
+        max-height: 400px;
+        object-fit: cover;
+        width: 100%;
+    }
+}
+
+/* Contact Us */
+/* Mengadaptasikan ikon kontak memiliki jarak dan warna yang konsisten */
+.contact-info-icon {
+    font-size: 1.5rem;
+    color: #0d6efd;
+    width: 40px;
+    text-align: center;
+}
+
+.map-container {
+    height: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+/* Estimator */
+/* Styling khusus untuk kalkulator */
+.result-box {
+    background-color: #f8f9fa;
+    border-left: 5px solid #0d6efd;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.calc-card {
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}

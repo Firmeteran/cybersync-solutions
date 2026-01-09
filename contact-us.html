@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+
 </head>
 
 <body class="d-flex flex-column min-vh-100">
@@ -18,13 +19,13 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="gallery.html">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="contact-us.html">Contact Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="estimator.html">Estimator</a></li>
+                <ul class="navbar-nav ms-auto text-center mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/gallery">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/about-us">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/contact-us">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/estimator">Estimator</a></li>
                 </ul>
             </div>
         </div>
@@ -32,73 +33,74 @@
 
     <main class="flex-grow-1 py-5">
         <div class="container">
-            <div class="text-center mb-5">
+            <div class="text-center mb-5 px-3">
                 <h1 class="fw-bold">Hubungi Kami</h1>
                 <p class="text-muted">Punya pertanyaan atau ingin memulai proyek? Kami siap membantu.</p>
             </div>
 
             <div class="row g-5">
-                <div class="col-lg-5">
+                <div class="col-12 col-lg-5">
                     <div class="card border-0 shadow-sm p-4 h-100">
                         <h4 class="fw-bold mb-4">Informasi Kontak</h4>
 
-                        <div class="d-flex align-items-center mb-3">
-                            <i class="bi bi-geo-alt contact-info-icon"></i>
+                        <div class="d-flex align-items-start mb-3">
+                            <i class="bi bi-geo-alt contact-info-icon me-3"></i>
                             <div>
                                 <h6 class="mb-0 fw-bold">Alamat Kami</h6>
                                 <p class="text-muted mb-0">Jl. Teknologi No. 101, Jakarta Selatan</p>
                             </div>
                         </div>
 
-                        <div class="d-flex align-items-center mb-3">
-                            <i class="bi bi-envelope contact-info-icon"></i>
+                        <div class="d-flex align-items-start mb-3">
+                            <i class="bi bi-envelope contact-info-icon me-3"></i>
                             <div>
                                 <h6 class="mb-0 fw-bold">Email</h6>
                                 <p class="text-muted mb-0">hello@cybersync.com</p>
                             </div>
                         </div>
 
-                        <div class="d-flex align-items-center mb-4">
-                            <i class="bi bi-telephone contact-info-icon"></i>
+                        <div class="d-flex align-items-start mb-4">
+                            <i class="bi bi-telephone contact-info-icon me-3"></i>
                             <div>
                                 <h6 class="mb-0 fw-bold">Telepon</h6>
                                 <p class="text-muted mb-0">+62 813 1234 5678</p>
                             </div>
                         </div>
 
-                        <div class="map-container">
+                        <div class="map-container shadow-sm">
                             <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126917.3827532326!2d106.7891559!3d-6.248666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e945e34b9d%3A0x5371bf0fdad786a2!2sJakarta%20Selatan!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.2482326792476!2d106.802111514769!3d-6.230978995489569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f14d30000001%3A0x291263056094b87!2sJakarta%20Selatan!5e0!3m2!1sid!2sid!4v1641000000000!5m2!1sid!2sid"
                                 width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
                             </iframe>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-7">
+                <div class="col-12 col-lg-7">
                     <div class="card border-0 shadow-sm p-4">
                         <h4 class="fw-bold mb-4">Kirim Pesan</h4>
                         <form id="contactForm">
                             <div class="row g-3">
-                                <div class="col-md-6">
-                                    <label class="form-label">Nama</label>
-                                    <input type="text" class="form-control" required>
+                                <div class="col-12 col-md-6">
+                                    <label class="form-label fw-semibold">Nama Lengkap</label>
+                                    <input type="text" class="form-control" placeholder="Masukkan nama Anda" required>
                                 </div>
-                                <div class="col-md-6">
-                                    <label class="form-label">Email</label>
-                                    <input type="email" class="form-control" required>
+                                <div class="col-12 col-md-6">
+                                    <label class="form-label fw-semibold">Email</label>
+                                    <input type="email" class="form-control" placeholder="email@contoh.com" required>
                                 </div>
-                                <div class="col-md-12">
-                                    <label class="form-label">Subjek</label>
-                                    <input type="text" class="form-control" placeholder="Tujuan pesan">
+                                <div class="col-12">
+                                    <label class="form-label fw-semibold">Subjek</label>
+                                    <input type="text" class="form-control" placeholder="Tujuan pesan Anda">
                                 </div>
-                                <div class="col-md-12">
-                                    <label class="form-label">Pesan</label>
+                                <div class="col-12">
+                                    <label class="form-label fw-semibold">Pesan</label>
                                     <textarea class="form-control" rows="6"
-                                        placeholder="Detail pesan"></textarea>
+                                        placeholder="Tuliskan detail kebutuhan Anda..."></textarea>
                                 </div>
-                                <div class="col-md-12">
-                                    <button type="submit" class="btn btn-primary btn-lg w-100 mt-2">Kirim Pesan</button>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary btn-lg w-100 mt-2 shadow-sm">Kirim
+                                        Pesan</button>
                                 </div>
                             </div>
                         </form>
@@ -109,8 +111,8 @@
     </main>
 
     <footer class="py-4 bg-dark text-white text-center">
-        <div class="container">
-            <p class="mb-0">&copy; 2026 CyberSync Solutions</p>
+        <div class="container px-4">
+            <p class="mb-0">© 2026 CyberSync Solutions</p>
         </div>
     </footer>
 

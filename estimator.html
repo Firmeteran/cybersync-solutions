@@ -18,14 +18,13 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="gallery.html">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
-                    <li class="nav-item"><a class="nav-link active fw-bold text-info"
-                            href="estimator.html">Estimator</a>
+                <ul class="navbar-nav ms-auto text-center mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/gallery">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/about-us">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contact-us">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link active fw-bold text-info" href="/estimator">Estimator</a>
                     </li>
                 </ul>
             </div>
@@ -34,19 +33,20 @@
 
     <main class="flex-grow-1 py-5">
         <div class="container">
-            <div class="text-center mb-5">
+            <div class="text-center mb-5 px-3">
                 <h1 class="fw-bold">Project Cost Estimator</h1>
                 <p class="text-muted">Dapatkan perkiraan biaya proyek Anda secara instan berdasarkan kebutuhan spesifik.
                 </p>
             </div>
 
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
+            <div class="row justify-content-center px-3">
+                <div class="col-12 col-lg-8">
                     <div class="card calc-card p-4 p-md-5">
                         <form id="calcForm">
                             <div class="mb-4">
-                                <label class="form-label fw-bold"><i class="bi bi-layers-fill me-2"></i>Pilih Jenis
-                                    Layanan Utama</label>
+                                <label class="form-label fw-bold"><i
+                                        class="bi bi-layers-fill me-2 text-primary"></i>Pilih Jenis Layanan
+                                    Utama</label>
                                 <select class="form-select form-select-lg" id="serviceType">
                                     <option value="0" selected disabled>-- Pilih Layanan --</option>
                                     <option value="5000000">Web Development (Mulai Rp 5jt)</option>
@@ -57,59 +57,59 @@
                             </div>
 
                             <div class="mb-4">
-                                <label class="form-label fw-bold"><i class="bi bi-plus-circle-fill me-2"></i>Fitur
-                                    Tambahan</label>
-                                <div class="row">
-                                    <div class="col-md-6 mb-2">
-                                        <div class="form-check border p-2 rounded">
+                                <label class="form-label fw-bold"><i
+                                        class="bi bi-plus-circle-fill me-2 text-primary"></i>Fitur Tambahan</label>
+                                <div class="row g-2">
+                                    <div class="col-12 col-md-6">
+                                        <div class="form-check border p-3 rounded">
                                             <input class="form-check-input ms-1" type="checkbox" value="1500000"
                                                 id="feature1">
                                             <label class="form-check-label ms-2" for="feature1">SEO Optimization
                                                 (+1.5jt)</label>
                                         </div>
                                     </div>
-                                    <div class="col-md-6 mb-2">
-                                        <div class="form-check border p-2 rounded">
+                                    <div class="col-12 col-md-6">
+                                        <div class="form-check border p-3 rounded">
                                             <input class="form-check-input ms-1" type="checkbox" value="2000000"
                                                 id="feature2">
                                             <label class="form-check-label ms-2" for="feature2">E-Commerce System
                                                 (+2jt)</label>
                                         </div>
                                     </div>
-                                    <div class="col-md-6 mb-2">
-                                        <div class="form-check border p-2 rounded">
+                                    <div class="col-12 col-md-6">
+                                        <div class="form-check border p-3 rounded">
                                             <input class="form-check-input ms-1" type="checkbox" value="1000000"
                                                 id="feature3">
                                             <label class="form-check-label ms-2" for="feature3">Maintenance 1 Tahun
                                                 (+1jt)</label>
                                         </div>
                                     </div>
-                                    <div class="col-md-6 mb-2">
-                                        <div class="form-check border p-2 rounded">
+                                    <div class="col-12 col-md-6">
+                                        <div class="form-check border p-3 rounded">
                                             <input class="form-check-input ms-1" type="checkbox" value="500000"
                                                 id="feature4">
-                                            <label class="form-check-label ms-2" for="feature4">Multi-language Support
+                                            <label class="form-check-label ms-2" for="feature4">Multi-language
                                                 (+500rb)</label>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <hr>
+                            <hr class="my-4">
 
-                            <div class="result-box p-4 mt-4">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div>
+                            <div class="result-box p-4">
+                                <div
+                                    class="d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
+                                    <div class="mb-3 mb-md-0">
                                         <h5 class="mb-0 fw-bold">Estimasi Total Biaya:</h5>
-                                        <small class="text-muted">*Harga dapat berubah setelah konsultasi
-                                            detail.</small>
+                                        <small class="text-muted">*Harga final setelah konsultasi.</small>
                                     </div>
-                                    <h2 class="mb-0" id="totalPriceDisplay">Rp 0</h2>
+                                    <h2 class="mb-0 text-primary fw-bold" id="totalPriceDisplay">Rp 0</h2>
                                 </div>
                             </div>
 
                             <div class="mt-4">
-                                <a href="contact-us.html" class="btn btn-primary btn-lg w-100">Konsultasikan
+                                <a href="/contact-us" class="btn btn-primary btn-lg w-100 shadow-sm">Konsultasikan
                                     Sekarang</a>
                             </div>
                         </form>
@@ -128,4 +128,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
+
 </html>
